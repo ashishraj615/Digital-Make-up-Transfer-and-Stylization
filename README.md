@@ -28,25 +28,25 @@ We are taking 2 images from user on which we are working. Steps that we followed
 ### Step 1
 To make control points on both of the faces, we are using dlib 68 control point face models database. As we know predictor takes only gray image, So after converting images into gray form, giving it to predictor and getting a face with 68 control points.
 
-![](Images/examp2.png) 
+![](Images/examp2.png)     
 ![](Images/step2.png)
 
 ### Step 2
 After marking control points on face, we are trying to make triangle with the help of these points using delaunay triangulation method.
 
-![](Images/examp3.png) 
+![](Images/examp3.png)     
 ![](Images/step3.png)
 
 ### Step 3
 After making triangle on both faces, we need to take out the selected region as a mask to perform warping.
 
-![](Images/examp4.png) 
+![](Images/examp4.png)     
 ![](Images/step4.png)
 
 ### Step 4
 To transfer the make-up from one face to other face, we need to do it region wise and for this purpose, region should be aligned equally. So, we are using warping for face alignment.
 
-image
+![](Images/warped.png)
 
 ### Step 5
 
@@ -55,5 +55,5 @@ Layer decomposition into face structure, skin detail and color using bilateral f
 -  Color transfer is using alpha blending of two-color layers of example and subject image. According to paper gamma is set to 0.8 for best results.
 -  For highlight & shading transfer, we are using xDoG method to stylize the image.
 
-image
+![](Result/result_image.png)
 
