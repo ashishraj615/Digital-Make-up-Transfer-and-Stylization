@@ -29,19 +29,19 @@ We are taking 2 images from user on which we are working. Steps that we followed
 To make control points on both of the faces, we are using dlib 68 control point face models database. As we know predictor takes only gray image, So after converting images into gray form, giving it to predictor and getting a face with 68 control points.
 
 ![](Images/examp2.png) 
-image
+![](Images/step2.png)
 
 ### Step 2
 After marking control points on face, we are trying to make triangle with the help of these points using delaunay triangulation method.
 
-image
-image
+![](Images/examp3.png) 
+![](Images/step3.png)
 
 ### Step 3
 After making triangle on both faces, we need to take out the selected region as a mask to perform warping.
 
-image 
-image
+![](Images/examp4.png) 
+![](Images/step4.png)
 
 ### Step 4
 To transfer the make-up from one face to other face, we need to do it region wise and for this purpose, region should be aligned equally. So, we are using warping for face alignment.
