@@ -21,7 +21,7 @@ Working on same images dimensions and taking only single face in frame.
 
 
 ## Dataset for detecting control point
-We are using 68 points trained face model data set which is creating 68 face control points on face and creating points on eyes, face, nose, mouth, lips. Dataset source is : https://github.com/davisking/dlib-models/blob/master/shape_predictor_68_face_landmarks.dat.bz2 
+We are using 68 points trained face model data set which is creating 68 face control points on face and creating points on eyes, face, nose, mouth, lips. Dataset source is : https://github.com/davisking/dlib-models/blob/master/shape_predictor_68_face_landmarks.dat.bz2 , download from the link and place in the same directory where main.py program is.
 
 We are taking 2 images from user on which we are working. Steps that we followed to achieve the result:
 
